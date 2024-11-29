@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ExploreButton : MonoBehaviour
 {
-
+    [SerializeField] int sceneNum;
     public void OpenExploreScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneNum);
     }
     // Start is called before the first frame update
     void Start()

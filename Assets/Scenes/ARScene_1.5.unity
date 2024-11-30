@@ -424,15 +424,48 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6497193119497909063, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1770695702}
+    - target: {fileID: 6497193119497909063, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlaceRandomObject
+      objectReference: {fileID: 0}
     - target: {fileID: 7104313019922892380, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
       propertyPath: m_Name
       value: Canvas AR_1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224464107583881209, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
+--- !u!1 &1214179097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1907635512072403299, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
+  m_PrefabInstance: {fileID: 1214179096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1214179098 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1821711249118524934, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
+  m_PrefabInstance: {fileID: 1214179096}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1214179099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7224464107583881209, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
+  m_PrefabInstance: {fileID: 1214179096}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1266610745
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,10 +868,11 @@ MonoBehaviour:
   - {fileID: 5548184500678821111, guid: 67aa77ba190972e468323673929c9fb3, type: 3}
   hasSpawned: 0
   hasDetected: 0
-  spawnUI: {fileID: 0}
-  waitUI: {fileID: 0}
+  spawnUI: {fileID: 1214179099}
+  waitUI: {fileID: 1214179097}
+  TutoralPanel: {fileID: 0}
   spawnPos: {x: 0, y: 0, z: 0}
-  backGroundImage: {fileID: 0}
+  backGroundImage: {fileID: 1214179098}
   spawnedObj: {fileID: 0}
 --- !u!114 &1770695703
 MonoBehaviour:

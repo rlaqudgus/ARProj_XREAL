@@ -12,6 +12,7 @@ public class SpawnObject : MonoBehaviour
     [SerializeField] private bool hasDetected;
     [SerializeField] private GameObject spawnUI;
     [SerializeField] private GameObject waitUI;
+    [SerializeField] private GameObject TutoralPanel;
     [SerializeField] private Vector3 spawnPos;
     [SerializeField] private Image backGroundImage;
 
@@ -126,6 +127,7 @@ public class SpawnObject : MonoBehaviour
         hasDetected = true;
         waitUI.SetActive(false);
         spawnUI.SetActive(true);
+        TutoralPanel.SetActive(true);
         ScreenCaptureAndShow();
         //ScreenCapture.CaptureScreenshot();
         //trackedPoseDriver.enabled = false;

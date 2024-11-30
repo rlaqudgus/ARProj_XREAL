@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private Text timer;
+    [SerializeField] private TextMeshProUGUI timer;
     [SerializeField] private int timeLimit;
 
     // Start is called before the first frame update

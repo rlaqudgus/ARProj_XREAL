@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ResultScene.unity
     guid: 0e15dd290d1b31b4584d7add96283dc1
   - enabled: 1
+    path: Assets/Scenes/ARScene_1.5.unity
+    guid: aab4dac00ac49d3419555766c8632753
+  - enabled: 0
     path: Assets/Scenes/ARScene_2.unity
     guid: db96003a9bc62d3408e5caa8680c232f
   m_configObjects:

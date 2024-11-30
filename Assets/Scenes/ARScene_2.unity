@@ -2460,6 +2460,8 @@ MonoBehaviour:
   spawnUI: {fileID: 253252669}
   waitUI: {fileID: 1977323381}
   spawnPos: {x: 0, y: 0, z: 0}
+  backGroundImage: {fileID: 545889487}
+  spawnedObj: {fileID: 0}
 --- !u!114 &1770695703
 MonoBehaviour:
   m_ObjectHideFlags: 0

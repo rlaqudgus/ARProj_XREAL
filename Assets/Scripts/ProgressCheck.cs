@@ -8,7 +8,7 @@ public class ProgressCheck : MonoBehaviour
 {
     [SerializeField] private ProgressBar feedBar;
     [SerializeField] private ProgressBar greetBar;
-
+    [SerializeField] private ProgressBar catchBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,13 +19,24 @@ public class ProgressCheck : MonoBehaviour
     void Update()
     {
         CheckProgress();
+        CheckCatchProgress();
     }
 
     private void CheckProgress()
     {
+        if (feedBar == null && greetBar == null) return;
         if(feedBar.Value>=1 && greetBar.Value>=1)
         {
             SceneManager.LoadScene(2);
         }
     }
+
+    private void CheckCatchProgress()
+    {
+        if (catchBar == null) return;
+        if(catchBar.Value>=1)
+        {
+            SceneManager.LoadScene(4);
+        }
+    }    
 }

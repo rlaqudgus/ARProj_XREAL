@@ -801,6 +801,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5091460559014187866, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 17801f37a4586f74ea9db2e1345ea13f, type: 3}
     - target: {fileID: 6497193119497909063, guid: a6675995e9af3b648a0f4ad49378edb8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

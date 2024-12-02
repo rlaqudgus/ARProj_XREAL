@@ -50,12 +50,12 @@ public class SpawnObject : MonoBehaviour
         {
             Debug.Log("Found Plane");
             Pose pose = hitInfos[0].pose;
-            GameObject centerGo = Instantiate(prefabs[0], pose.position, pose.rotation);
+            GameObject centerGo = Instantiate(prefabs[0], pose.position, Quaternion.identity);
             spawnedObj = centerGo;
             Debug.Log("Placed Object in screen center position");
 
             //face object towards the main camera
-            //RotateTowardsCamera(centerGo);
+            RotateTowardsCamera(centerGo);
         }
 
         // 2. if failed to detect plane in screen center pos, get the latest updated or added plane center pos
@@ -73,15 +73,9 @@ public class SpawnObject : MonoBehaviour
     private void RotateTowardsCamera(GameObject go)
     {
         Debug.Log(go.transform.rotation.eulerAngles);
-        Vector3 position = go.transform.position;
-        Vector3 cameraPosition = Camera.main.transform.position;
-        Vector3 direction = position - cameraPosition;
-        Vector3 lookRotationEuler = Quaternion.LookRotation(direction).eulerAngles;
-        Debug.Log(lookRotationEuler);
-
-        Vector3 scaledEuler = Vector3.Scale(lookRotationEuler, go.transform.up.normalized);
-        Quaternion targetRotation = Quaternion.Euler(scaledEuler);
-        go.transform.rotation = go.transform.rotation * targetRotation;
+        //Not working? always shows back
+        go.transform.LookAt(Camera.main.transform);
+        go.transform.eulerAngles = new Vector3(0, go.transform.eulerAngles.y+180, 0);
         Debug.Log(go.transform.rotation.eulerAngles);
     }
 

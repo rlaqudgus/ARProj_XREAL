@@ -10,6 +10,11 @@ public class CatchButton : MonoBehaviour
     public void CatchAnimal()
     {
         catchBar.Value += 0.2f;
-        spawnObject.spawnedObj.GetComponent<Animator>().SetTrigger("Interaction");
+        spawnObject.spawnedObj.GetComponentInChildren<Animator>().SetTrigger("Interaction");
+
+        if(catchBar.Value>=1)
+        {
+            spawnObject.spawnedObj.GetComponentInChildren<Animator>().SetTrigger("Death");
+        }
     }
 }

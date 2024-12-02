@@ -25,7 +25,7 @@ public class ProgressCheck : MonoBehaviour
     private void CheckProgress()
     {
         if (feedBar == null && greetBar == null) return;
-        if(feedBar.Value>=1 && greetBar.Value>=1)
+        if (feedBar.Value>=1 && greetBar.Value>=1)
         {
             SceneManager.LoadScene(2);
         }
@@ -34,9 +34,15 @@ public class ProgressCheck : MonoBehaviour
     private void CheckCatchProgress()
     {
         if (catchBar == null) return;
-        if(catchBar.Value>=1)
+        if (catchBar.Value>=1)
         {
-            SceneManager.LoadScene(4);
+            StartCoroutine(WaitUntilDeath());
         }
-    }    
+    }
+    
+    IEnumerator WaitUntilDeath()
+    {
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(4);
+    }
 }

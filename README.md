@@ -29,5 +29,15 @@
 
 - **시연 영상**
 
+
+*GIF*
+
+
 ![한강에코월드](https://github.com/user-attachments/assets/ecc74001-42e9-4c1c-b8f3-bfaf60ac8dcc)
+
+
+*Youtube*
+
+  
+https://youtu.be/njP8Nw9O4xQ
 

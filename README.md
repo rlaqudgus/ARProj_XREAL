@@ -42,3 +42,5 @@ https://drive.google.com/file/d/1HRXMXSf5KGL0UPM85y9dMuD_ighw-W5P/view?usp=shari
 
 - **빌드 파일** :
 https://drive.google.com/file/d/15gHcQJjnzUAMHhEDBRvENNbeRgoWKoLd/view?usp=drive_link
+
+  - 안드로이드 환경에서만 설치 가능합니다.

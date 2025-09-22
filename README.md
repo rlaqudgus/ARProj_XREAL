@@ -21,23 +21,24 @@
 
 ## 자료
 
-- **기능 명세서**
+- **기능 명세서** :
+https://drive.google.com/file/d/1XtIiJ2aQOcstTR-PCwD0xhN5b0rt1hcP/view?usp=drive_link
 
-
-- **발표 자료**
-
+- **발표 자료** :
+https://drive.google.com/file/d/1HRXMXSf5KGL0UPM85y9dMuD_ighw-W5P/view?usp=sharing
 
 - **시연 영상**
 
 
-*GIF*
+  - *GIF*
+ 
+    ![한강에코월드](https://github.com/user-attachments/assets/ecc74001-42e9-4c1c-b8f3-bfaf60ac8dcc)
 
 
-![한강에코월드](https://github.com/user-attachments/assets/ecc74001-42e9-4c1c-b8f3-bfaf60ac8dcc)
+  - *Youtube*
+
+    [![Video Label](http://img.youtube.com/vi/njP8Nw9O4xQ/0.jpg)](https://youtu.be/njP8Nw9O4xQ)
 
 
-*Youtube*
-
-  
-https://youtu.be/njP8Nw9O4xQ
-
+- **빌드 파일** :
+https://drive.google.com/file/d/15gHcQJjnzUAMHhEDBRvENNbeRgoWKoLd/view?usp=drive_link
